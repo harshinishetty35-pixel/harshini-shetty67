@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmetHub | Premium Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">GourmetHub</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div id="cart-icon" style="position: relative; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-gold);"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span id="cart-count" style="position: absolute; top: -10px; right: -10px; background: var(--primary-gold); color: var(--bg-dark); font-size: 0.7rem; font-weight: 700; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">0</span>
+            </div>
+            <a href="#menu" class="btn-order">Order Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Experience Fine Dining <br>At Home</h1>
+        <p>Indulge in a world-class culinary journey with our curated menu of premium ingredients and masterfully crafted dishes.</p>
+        <div class="hero-btns">
+            <a href="#menu" class="btn-primary">View Menu</a>
+            <a href="#about" class="btn-outline">Explore Dishes</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="title-center">
+            <h2>Our Signature Menu</h2>
+            <p>A selection of our finest creations, soulfully prepared for you.</p>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Starters">Starters</button>
+            <button class="filter-btn" data-category="Main Course">Main Course</button>
+            <button class="filter-btn" data-category="Desserts">Desserts</button>
+            <button class="filter-btn" data-category="Beverages">Beverages</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+            <!-- Dynamic items will be injected here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974&auto=format&fit=crop" alt="Premium Chef" class="about-img" style="width: 100%; height: auto;">
+            <div class="about-text">
+                <h2>Culinary Excellence <br>Since 1995</h2>
+                <p>At GourmetHub, we believe that dining is an art form. Our chefs combine traditional techniques with modern innovation to create dishes that tell a story.</p>
+                <br>
+                <p>We source only the freshest organic ingredients from local farmers, ensuring that every bite is a testament to quality and taste.</p>
+                <br>
+                <a href="#contact" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background: var(--bg-card);">
+        <div class="title-center">
+            <h2>What Our Guests Say</h2>
+        </div>
+        <div class="menu-grid">
+            <div class="food-card" style="padding: 40px; text-align: center;">
+                <p>"The best truffle risotto I've ever had. The flavors are simply divine!"</p>
+                <h4 style="margin-top: 20px; color: var(--primary-gold);">- James Wilson</h4>
+            </div>
+            <div class="food-card" style="padding: 40px; text-align: center;">
+                <p>"An absolute masterpiece of a menu. The attention to detail is unmatched."</p>
+                <h4 style="margin-top: 20px; color: var(--primary-gold);">- Sophia Loren</h4>
+            </div>
+            <div class="food-card" style="padding: 40px; text-align: center;">
+                <p>"Premium service and even better food. GourmetHub is our go-to for special occasions."</p>
+                <h4 style="margin-top: 20px; color: var(--primary-gold);">- Robert De Niro</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="title-center">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="margin-bottom: 30px; border-bottom: 1px solid var(--glass); padding-bottom: 15px;">
+                <h3 style="margin-bottom: 10px;">Do you offer home delivery?</h3>
+                <p style="color: var(--text-muted);">Yes, we provide premium delivery service within a 15km radius of our main kitchen.</p>
+            </div>
+            <div style="margin-bottom: 30px; border-bottom: 1px solid var(--glass); padding-bottom: 15px;">
+                <h3 style="margin-bottom: 10px;">Are there vegan options available?</h3>
+                <p style="color: var(--text-muted);">Absolutely. We have a dedicated section for vegan and vegetarian delicacies.</p>
+            </div>
+            <div style="margin-bottom: 30px; border-bottom: 1px solid var(--glass); padding-bottom: 15px;">
+                <h3 style="margin-bottom: 10px;">How can I make a reservation?</h3>
+                <p style="color: var(--text-muted);">You can book a table directly through our contact form or by calling our hotline.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Get In Touch</h2>
+                <p>Have a question or want to book a table? Send us a message.</p>
+                <form style="margin-top: 30px;">
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 15px; background: var(--glass); border: 1px solid var(--glass); color: white; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 15px; background: var(--glass); border: 1px solid var(--glass); color: white; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <textarea placeholder="Message" rows="5" style="width: 100%; padding: 15px; background: var(--glass); border: 1px solid var(--glass); color: white; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="button" class="btn-primary" style="border: none; cursor: pointer; width: 100%;">Send Message</button>
+                </form>
+            </div>
+            <div style="height: 400px; background: var(--bg-card); border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <h3 style="color: var(--primary-gold); font-size: 2rem;">Visit Us</h3>
+                <p style="margin-top: 15px;">123 Luxury Lane, Food District<br>Manhattan, NY 10013</p>
+                <p style="margin-top: 15px;">Open: Mon - Sun | 11:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">GourmetHub</a>
+                <p style="margin-top: 20px; color: var(--text-muted);">Bringing the world's finest flavors to your doorstep. Culinary excellence in every bite.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="admin.html">Admin Panel</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted);">support@gourmethub.com</p>
+                <p style="color: var(--text-muted); margin-top: 10px;">+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GourmetHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span id="close-cart" style="cursor: pointer; font-size: 1.5rem;">&times;</span>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamic -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            
+            <div id="checkout-form-container" style="margin-top: 20px;">
+                <h4 style="margin-bottom: 15px; color: var(--primary-gold);">Checkout Details</h4>
+                <form id="checkout-form">
+                    <input type="text" id="cust-name" placeholder="Full Name" required style="width: 100%; margin-bottom: 10px;">
+                    <input type="tel" id="cust-phone" placeholder="Phone Number" required style="width: 100%; margin-bottom: 10px;">
+                    <input type="text" id="cust-address" placeholder="Delivery Address" required style="width: 100%; margin-bottom: 10px;">
+                    <textarea id="cust-instructions" placeholder="Special Instructions (Optional)" rows="2" style="width: 100%; margin-bottom: 20px;"></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="food-card" style="padding: 40px; text-align: center; max-width: 400px; background: var(--bg-card);">
+            <h2 style="color: var(--primary-gold); margin-bottom: 20px;">Order Placed!</h2>
+            <p>Your culinary experience is being prepared. We will contact you shortly.</p>
+            <button onclick="closeSuccessModal()" class="btn-primary" style="margin-top: 30px; border: none; cursor: pointer;">Perfect</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
